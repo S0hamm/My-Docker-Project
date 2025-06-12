@@ -68,3 +68,10 @@ This project was built to:
 Learn Docker basics: image, container, build, and run
 Understand containerized deployment of web projects
 Build a professional foundation for more advanced DevOps practices
+
+
+👨‍💻 Author
+Soham Dhara
+📧 sohamdhara241@gmail.com
+🌐 https://hub.docker.com/u/sohamd48
+
