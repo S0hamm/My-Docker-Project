@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soham Dhara - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="custom-cursor"></div>
+
+<nav class="navbar">
+    <div class="container">
+        <a href="#" class="logo">Soham Dhara</a>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="theme-toggle">
+                <button id="theme-toggle-btn">🌙</button>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="typing-animation"></span></h1>
+            <p>An aspiring Software Developer creating engaging and robust solutions.</p>
+            <a href="#projects" class="btn primary-btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section parallax-section">
+        <div class="container about-content">
+            <div class="about-image reveal-on-scroll left">
+                <img src="soham-profile.png" alt="Soham Dhara's Profile Picture">
+            </div>
+            <div class="about-text reveal-on-scroll right">
+                <h2>About Me</h2>
+                <p>Curious and enthusiastic Computer Science student deeply interested in how software systems are built and connected. I specialize in backend development using Java, Spring Boot, and AWS, with hands-on experience in REST API design, Docker, and virtualization. I'm familiar with the concepts of CI/CD pipelines and tools like Jenkins, eager to apply and expand this knowledge. I enjoy working on projects that improve my understanding of real-world systems and am looking for opportunities where I can contribute and keep learning</p>
+                <p>I'm currently pursuing a Bachelor of Technology in Computer Science Engineering from the University of Engineering & Management, Kolkata.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>Skills & Tools</h2>
+            <div class="skills-grid">
+                <div class="skill-card reveal-on-scroll zoom">
+                    <img src="java-icon.png" alt="Java">
+                    <h3>Java</h3>
+                    <div class="progress-bar-container"><div class="progress-bar" data-progress="90"></div></div>
+                </div>
+                <div class="skill-card reveal-on-scroll zoom">
+                    <img src="springboot-icon.png" alt="Spring Boot">
+                    <h3>Spring Boot</h3>
+                    <div class="progress-bar-container"><div class="progress-bar" data-progress="85"></div></div>
+                </div>
+                <div class="skill-card reveal-on-scroll zoom">
+                    <img src="mysql-icon.png" alt="MySQL">
+                    <h3>MySQL</h3>
+                    <div class="progress-bar-container"><div class="progress-bar" data-progress="80"></div></div>
+                </div>
+                <div class="skill-card reveal-on-scroll zoom">
+                    <img src="aws-icon.png" alt="AWS">
+                    <h3>AWS Basics</h3>
+                    <div class="progress-bar-container"><div class="progress-bar" data-progress="70"></div></div>
+                </div>
+                <div class="skill-card reveal-on-scroll zoom">
+                    <img src="git-icon.png" alt="Git/GitHub">
+                    <h3>Git/GitHub</h3>
+                    <div class="progress-bar-container"><div class="progress-bar" data-progress="90"></div></div>
+                </div>
+                <div class="skill-card reveal-on-scroll zoom">
+                    <img src="Docker logo.png" alt="Docker">
+                    <h3>Docker</h3>
+                    <div class="progress-bar-container"><div class="progress-bar" data-progress="70"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card reveal-on-scroll slide-up" data-project-id="1">
+                    <img src="project-website-aws-thumb.jpg" alt="Hosted a Static Website on AWS">
+                    <h3>Hosted a Static Website on AWS</h3>
+                    <p>Leveraged Amazon S3 for file storage and AWS IAM for access control.</p>
+                    <button class="view-details-btn">View Details</button>
+                </div>
+                <div class="project-card reveal-on-scroll slide-up" data-project-id="2">
+                    <img src="project-todolist-thumb.jpg" alt="RESTful To-Do List API">
+                    <h3>RESTful To-Do List API Development</h3>
+                    <p>Built using Java and Spring Boot, with Spring Data JPA and H2 Database.</p>
+                    <button class="view-details-btn">View Details</button>
+                </div>
+                <div class="project-card reveal-on-scroll slide-up" data-project-id="3">
+                    <img src="project-pdfreader-thumb.jpg" alt="Sarnaash PDF Reader">
+                    <h3>Sarnaash PDF Reader</h3>
+                    <p>Developed using StreamLit, LangChain, and ChromaDB for PDF interaction.</p>
+                    <button class="view-details-btn">View Details</button>
+                </div>
+                <div class="project-card reveal-on-scroll slide-up" data-project-id="4">
+                    <img src="project-pdfreader-thumb.jpg" alt="Static Website Deployment using Docker and Nginx">
+                    <h3>Static Website Deployment Using Docker and Nginx</h3>
+                    <p>Created a Docker container to serve a static portfolio website using Nginx as the web server.</p>
+                    <button class="view-details-btn">View Details</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modal-project-title"></h3>
+            <img id="modal-project-image" src="" alt="Project Image">
+            <p id="modal-project-description"></p>
+        </div>
+    </div>
+
+    <section id="contact" class="contact-section parallax-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me! You can fill out the form below or contact me directly.</p>
+            <p><strong>Phone:</strong> +91 8637557219</p> <form class="contact-form reveal-on-scroll fade-in" action="https://formspree.io/f/yourformid" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="_replyto" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="btn primary-btn">Send Message</button>
+        </form>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="social-icons">
+            <a href="https://github.com/S0hamm" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/soham-dhara-9aa7751ab" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+        </div>
+        <p>&copy; 2025 Soham Dhara. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
